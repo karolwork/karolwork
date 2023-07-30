@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abogados Salamanca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="enviar formulario.php">
+    <link rel="icon" href="file:///C:/Users/Usuario/Downloads/Sin%20t%C3%ADtulo.png"
+
+</head>
+
+    <script>
+        const buttons = document.querySelectorAll(".contact-btn");
+      
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            const targetSection = button.getAttribute("data-target");
+            const targetElement = document.getElementById(targetSection);
+      
+    
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      </script>
+
+<body>
+    <header>
+        <h1>Abogados Salamanca</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#eliminación De Reportes">Eliminación De Reportes</a></li>
+                <li><a href="#contenido-gratuito">Contenido gratuito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Solucionamos Tus Finanzas</h2>
+        <p>Te ayudo a vivir libre de deudas, mejorando tu vida financiera y crediticia.</p>
+    </section>
+
+    <section id="Eliminación De Reportes">
+        <h2>Eliminación De Reportes</h2>
+        <div class="profile-image">
+        
+            <img src="https://imgmedia.larepublica.pe/640x377/larepublica/original/2022/04/21/6261eca2ea80e22fb844650d.webp" alt="Mi Foto de Perfil">
+        </div>
+
+        <p>A continuación se presentan nuestros servicios y precios. Si estos te interesan, no dudes en contactarnos.</p>
+        <div class="buttons-container">
+            <button class="contact-btn" data-target="contacto">Asesoría completa para eliminar mis reportes</button>
+            <button class="contact-btn" data-target="subtitulo1">Asesoría virtual eliminación de reportes $75.000 45 min</button>
+            <button class="contact-btn" data-target="subtitulo2">Asesoría presencial $150.000 1 hora</button>
+            <button class="contact-btn" data-target="subtitulo3">Asesoría llamada $39.000 20 min</button>
+            <button class="contact-btn" data-target="subtitulo4">Formatos derechos de petición</button>
+        </div>
+
+        
+    <section id="contenido-gratuito">
+        <h2>Contenido gratuito</h2>
+        <p>Aquí puedes encontrar contenido gratuito y de gran valor.</p>
+        <a href="file:///C:/Users/Usuario/Downloads/circular-externa-048-de-2008-cobranza.pdf" download>
+            <button class="https://drive.google.com/file/d/1USCM8gyPUwafvjs93H2_-h7H4pMSR44N/view">Descarga La Circular Externa De La Super Intendencia Financiera</button>
+        </a>
+    </section>
+
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para contactarme, puedes utilizar el siguiente formulario o mis redes sociales.</p>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul class="social-media">
+            
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+    </footer>
+    <form action="enviar_formulario.php" method="POST">
+
+    </form>
+
+</body>
+
+</html>
